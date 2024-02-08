@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import AllBlog from './pages/AllBlog';
+import UserBlog from './pages/UserBlog';
+import Auth from './componentss/Auth';
+import { useContext } from 'react';
+import { logoutContext } from './Contexts/ContextShare';
+
+
 
 function App() {
+
+  const {logout,setLogout}=useContext(logoutContext)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/allblog' element={<AllBlog />} />
+        <Route path='/userblog' element={logout?<UserBlog />:<Home/>} />
+        <Route path='/auth' element={<Auth register/>}/>
+        <Route path='/login' element={<Auth/>}/>
+        
+      </Routes>
+
+
     </div>
   );
 }

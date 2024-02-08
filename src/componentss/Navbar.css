@@ -1,0 +1,29 @@
+.nav{
+    width:100%;
+     top: 0px; 
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+  
+    padding-bottom: px;
+    z-index: 1;
+    padding-right: 30px;
+    background:transparent;
+    align-items: center;
+    display: flex;
+ 
+   
+    justify-content: space-between;
+  }
+  .nav-white{
+    background-color:black;
+    height: 60px;
+    
+  }
+  .btn{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .img{
+    margin-top: 5px;
+  }
