@@ -94,7 +94,7 @@ function AllBlog() {
 
 
 
-        <div className="row mt-5 ms-4  mb-5   container-fluid  bg-light">
+        <div className="row mt-5 mb-5   container-fluid  bg-light">
 
           {allBlog?.length > 0 ?
             allBlog.map((item) => (<Col sm={12} md={6} lg={4}>

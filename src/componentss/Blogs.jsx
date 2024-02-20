@@ -17,7 +17,7 @@ function Blogs({blog}) {
       <div className='' >
         
           <div className='row   '>
-             <Card  className='mb-5 p-2 ms-5 me-4 shadow border-2' onClick={handleShow} style={{ width: '22rem',height:"27rem" }}>
+             <Card  className='mb-5 p-2 ms-4 me-4 shadow border-2' onClick={handleShow} style={{ width: '22rem',height:"27rem" }}>
           <Card.Img variant="top" style={{height:"300px"}} src={blog?`${BASE_URL}/uploads/${blog.blogImage}`:null} />
           <Card.Body>
             <Card.Title style={{fontWeight:"bold"}}> Title : {blog.title.toUpperCase()} </Card.Title>

@@ -165,7 +165,7 @@ function UserBlog() {
           <div >
             <Link to={'/allblog'}><button style={{ backgroundColor: "red", borderRadius: "0px", color: "white" }} className='btn'>LIBRARY</button></Link>
 
-            <Link onClick={handleLogout}  style={{ paddingLeft: "25px", marginRight: "-16px" ,backgroundColor:"black",color:"white"}}><i class="fa-solid fa-power-off"></i></Link>
+            <Link onClick={handleLogout}  style={{ paddingLeft: "25px", marginRight: "-8px" ,backgroundColor:"black",color:"white"}}><i class="fa-solid fa-power-off"></i></Link>
 
           </div>
         </Container>
